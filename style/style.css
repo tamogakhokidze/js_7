@@ -16,12 +16,12 @@
   position: fixed;
   z-index: 10000;
   height: auto;
-  /* transition: 0.2s; */
+  transition: 0.5s;
 }
 
 .navbar.active {
-  background-color: lightcoral;
-}
+    background-color: rgb(224, 224, 245);
+  }
 
 .nav-ul {
   list-style: none;

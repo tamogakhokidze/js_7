@@ -58,11 +58,24 @@ scrollButton.addEventListener("click", () => {
 // });
 
 
-$(window).on("scroll", function() {
-    if($(window).scrollTop() > 800) {
-        $(".navbar").addClass("active");
-    } else {
-        //remove the background property so it comes transparent again (defined in your css)
-       $(".navbar").removeClass("active");
-    }
-});
+// $(window).on("scroll", function() {
+//     if($(window).scrollTop() > 800) {
+//         $(".navbar").addClass("active");
+//     } else {
+//         //remove the background property so it comes transparent again (defined in your css)
+//        $(".navbar").removeClass("active");
+//     }
+// });
+
+let navBar = document.getElementById("navbar");
+window.onscroll = function(){
+  let top = window.scrollY;
+  console.log(top);
+  
+  if (top > 50){
+    navBar.classList.add('active');
+  }
+  else{
+    navBar.classList.remove('active');
+  }
+}
